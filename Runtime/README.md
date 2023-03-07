@@ -7,17 +7,17 @@ A simple C# .NET wrapper library to use with OpenAI's GPT-3 API.  More context [
 ```csharp
 var api = new OpenAI_API.OpenAIAPI(engine: Engine.Davinci);
 
-var result = await api.Completions.CreateCompletionAsync("One Two Three One Two", temperature: 0.1);
+var result = await api.Completions.CreateCompletionAsync("One Two Three One Two", temperature: 0.6);
 Console.WriteLine(result.ToString());
 // should print something starting with "Three"
 ```
 
 ```csharp
-var api = new OpenAI_API.OpenAIAPI("sk-mysecretkeyhere"););
+var api = new OpenAI_API.OpenAIAPI("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"););
 
 var result = await api.Search.GetBestMatchAsync("Washington DC", "Canada", "China", "USA", "Spain");
 Console.WriteLine(result);
-// should print "USA"
+// should print "china"
 ```
 
 ## Requirements
